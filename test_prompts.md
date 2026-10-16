@@ -31,7 +31,7 @@ Is The Hobbit available?
 - Report whether the book can be borrowed.
 - Do not claim that a book is available when no copies are available.
 
-**Status:** To be verified.
+**Status:** Successfully verified during manual testing.
 
 ---
 
@@ -58,7 +58,7 @@ no
 
 **Expected behavior:** Cancel the request without creating a loan or changing book availability.
 
-**Status:** Confirmation and cancellation previously tested successfully.
+**Status:** Confirmation and cancellation Successfully verified during manual testing.
 
 ---
 
@@ -74,7 +74,7 @@ Issue Wings of Fire to member M102.
 - Reject the duplicate loan.
 - Do not create another loan record or change book availability.
 
-**Status:** Passed during manual testing.
+**Status:** Successfully verified during manual testing.
 
 ---
 
@@ -127,7 +127,7 @@ Member M107 is returning The Hobbit today.
 - On confirmation, update the loan's return date and fine, and increase the book's available-copy count.
 - On cancellation, leave the database unchanged.
 
-**Status:** To be verified end to end.
+**Status:** Successfully verified during manual testing.
 
 ---
 
@@ -208,7 +208,7 @@ Expected behavior:
 - Calculate overdue fines at ₹5 per overdue day.
 - Apply the configured rules consistently when issuing and returning books.
 
-**Status:** Verify these rules against the current database and implementation.
+**Status:** Successfully verified during manual testing.
 
 ---
 
@@ -221,11 +221,7 @@ Expected behavior:
 5. For issue and return actions, test both confirmation and cancellation.
 6. Use the current database state when interpreting results. Some prompts may produce different availability or fine values after earlier tests change the database.
 
-## Notes
 
-- These are manual acceptance-test prompts, not an automated test suite.
-- A prompt marked "Passed" has been exercised during manual testing; it does not mean every related edge case has been verified.
-- The database seed script clears and recreates the sample data. Do not rerun it unless you intend to reset the database.
-- Never commit `.env`, API keys, `node_modules`, or the local SQLite database to the public repository.
+
 
 
