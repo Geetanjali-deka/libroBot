@@ -1,0 +1,19 @@
+# Environment variables and API keys
+.env
+.env.*
+
+# Allow an example environment file to be shared
+!.env.example
+
+# Installed dependencies
+node_modules/
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local SQLite database
+database/librobot.db

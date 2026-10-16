@@ -1,0 +1,34 @@
+
+{
+  "name": "librobot",
+  "version": "1.0.0",
+  "description": "Smart College Library Assistant",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js",
+    "test": "npm run test:search && npm run test:availability && npm run test:member-loans && npm run test:overdue",
+    "test:search": "node tools/testSearchBooks.js",
+    "test:availability": "node tools/testCheckAvailability.js",
+    "test:member-loans": "node tools/testGetMemberLoans.js",
+    "test:overdue": "node tools/testListOverdueBooks.js",
+    "test:issue": "node tools/testIssueBook.js",
+    "test:return": "node tools/testReturnBook.js"
+  },
+  "keywords": [
+    "library",
+    "assistant",
+    "langchain",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@langchain/core": "^1.2.17",
+    "@langchain/groq": "^1.3.1",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.8",
+    "zod": "^4.6.7"
+  }
+}
+
